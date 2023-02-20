@@ -1,4 +1,11 @@
-public class DoubleList<T> implements Ilista<T>{
+ /*
+ * Alina Carías (22539)
+ * Algoritmos y Estructuras de Datos Sección 40
+ * Hoja de Trabajo 4
+ * 19.02-2023
+ * Clase DoubleList: hace una lista con espacios antes y despues del dato
+ */
+public class DoubleList<T> extends Listas<T>{
     private NodoDouble<T> start;
 	private NodoDouble<T> end;
 	private int count;
@@ -9,6 +16,10 @@ public class DoubleList<T> implements Ilista<T>{
 		count = 0;
 	}
 	
+	
+	/** 
+	 * @param value
+	 */
 	@Override
 	public void InsertAtStart(T value) {
 		NodoDouble<T> newNode = new NodoDouble<T>(value);
@@ -31,6 +42,10 @@ public class DoubleList<T> implements Ilista<T>{
 		count++;
 	}
 
+	
+	/** 
+	 * @param value
+	 */
 	@Override
 	public void InsertAtEnd(T value) {
 		
@@ -183,5 +198,9 @@ public class DoubleList<T> implements Ilista<T>{
 	public int Count() {
 		return count;
 	}
+
+
+	
+
 
 }

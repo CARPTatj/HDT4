@@ -1,7 +1,15 @@
-public class SingleList<T> implements Ilista<T>{
+ /*
+ * Alina Carías (22539)
+ * Algoritmos y Estructuras de Datos Sección 40
+ * Hoja de Trabajo 4
+ * 19.02-2023
+ * Clase SingleList: Crea una sola lista
+ */
+public class SingleList<T> extends Listas<T> {
     private int count;
     private NodoSingle<T> start;
     private NodoSingle<T> end;
+
 
 	@Override
 	public void InsertAtStart(T value) {
