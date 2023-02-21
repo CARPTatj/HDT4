@@ -14,26 +14,46 @@ public class StackVector<T> extends Stack<T> {
 		miSegundaListaInterna = new Vector<T>(); 
 	}
 	
+	
+	/** 
+	 * @return int
+	 */
 	@Override
 	public int count() {
 		return miSegundaListaInterna.size();
 	}
 
+	
+	/** 
+	 * @return boolean
+	 */
 	@Override
 	public boolean isEmpty() {
 		return miSegundaListaInterna.isEmpty();
 	}
 
+	
+	/** 
+	 * @param value
+	 */
 	@Override
 	public void push(T value) {
 		miSegundaListaInterna.add(0, value);
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T pull() {
 		return miSegundaListaInterna.remove(0);
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T peek() {		
 		return miSegundaListaInterna.get(0);

@@ -5,13 +5,21 @@
  * 19.02-2023
  * Clase SingleList: Crea una sola lista
  */
+/**
+ * @author MAAG
+ *
+ */
 public class SingleList<T> extends Listas<T> {
     private int count;
     private NodoSingle<T> start;
     private NodoSingle<T> end;
 
 
-	@Override
+	
+    /** 
+     * @param value
+     */
+    @Override
 	public void InsertAtStart(T value) {
 		NodoSingle<T> newNode = new NodoSingle<T>(value);
 
@@ -28,7 +36,11 @@ public class SingleList<T> extends Listas<T> {
         count++;
 	}
 
-	@Override
+	
+    /** 
+     * @param value
+     */
+    @Override
 	public void InsertAtEnd(T value) {
 		NodoSingle<T> newNode = new NodoSingle<T>(value);
 
@@ -46,7 +58,12 @@ public class SingleList<T> extends Listas<T> {
 		
 	}
 
-	@Override
+	
+    /** 
+     * @param value
+     * @param index
+     */
+    @Override
 	public void Insert(T value, int index){
 		
 		if (IsEmpty()) //if the list is empty then insert at start
@@ -85,7 +102,12 @@ public class SingleList<T> extends Listas<T> {
         }
 	}
 
-	@Override
+	
+    /** 
+     * @param index
+     * @return T
+     */
+    @Override
 	public T Delete(int index) {
 		
 		if (index == 0)
@@ -121,7 +143,11 @@ public class SingleList<T> extends Listas<T> {
         }
 	}
 
-	@Override
+	
+    /** 
+     * @return T
+     */
+    @Override
 	public T DeleteAtStart() {
 		
 		if (!IsEmpty()) 
@@ -135,7 +161,11 @@ public class SingleList<T> extends Listas<T> {
         return null;
 	}
 
-	@Override
+	
+    /** 
+     * @return T
+     */
+    @Override
 	public T DeleteAtEnd() {
 		if (!IsEmpty()) 
         {
@@ -172,7 +202,12 @@ public class SingleList<T> extends Listas<T> {
         return null;
 	}
 
-	@Override
+	
+    /** 
+     * @param index
+     * @return T
+     */
+    @Override
 	public T Get(int index) {
 		
 	    if (!IsEmpty())
@@ -213,12 +248,20 @@ public class SingleList<T> extends Listas<T> {
         return null;
 	}
 
-	@Override
+	
+    /** 
+     * @return boolean
+     */
+    @Override
 	public boolean IsEmpty() {
 		return count == 0;
 	}
 
-	@Override
+	
+    /** 
+     * @return int
+     */
+    @Override
 	public int Count() {
 		// TODO Auto-generated method stub
 		return count;

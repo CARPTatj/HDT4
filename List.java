@@ -6,8 +6,9 @@
  * Clase List: contiene las dos tipos de listas, clase hija
  */
 public class List<T> extends Stack<T>{
-   private FactoryList<T> factoList = new FactoryList<T>();
-   private Listas<T> listaI;
+   
+    private FactoryList<T> factoList = new FactoryList<T>();
+    private Listas<T> listaI;
 
 
 
@@ -16,28 +17,47 @@ public class List<T> extends Stack<T>{
     }
 
     
+	
+	/** 
+	 * @return int
+	 */
 	@Override
 	public int count() {
 		return listaI.Count();
 	}
 
+	
+	/** 
+	 * @return boolean
+	 */
 	@Override
 	public boolean isEmpty() {
 		return listaI.IsEmpty();
 	}
 
+	
+	/** 
+	 * @param value
+	 */
 	@Override
 	public void push(T value) {
-		listaI.InsertAtEnd(value);
+		listaI.InsertAtStart(value);
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T pull() {
-        T objeto = listaI.Get(listaI.Count());
-        listaI.DeleteAtEnd();
-		return objeto;
+       
+		return listaI.DeleteAtStart();
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T peek() {		
 		return (T) listaI.Get(listaI.Count());

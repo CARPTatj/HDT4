@@ -70,6 +70,11 @@ public class DoubleList<T> extends Listas<T>{
 		
 	}
 
+	
+	/** 
+	 * @param value
+	 * @param index
+	 */
 	@Override
 	public void Insert(T value, int index) {
 		
@@ -110,12 +115,21 @@ public class DoubleList<T> extends Listas<T>{
 		
 	}
 
+	
+	/** 
+	 * @param index
+	 * @return T
+	 */
 	@Override
 	public T Delete(int index) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T DeleteAtStart() {
 		if (!IsEmpty()) {
@@ -142,12 +156,21 @@ public class DoubleList<T> extends Listas<T>{
 		
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T DeleteAtEnd() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	
+	/** 
+	 * @param index
+	 * @return T
+	 */
 	@Override
 	public T Get(int index) {
 	    if (!IsEmpty())
@@ -189,11 +212,19 @@ public class DoubleList<T> extends Listas<T>{
 
 	}
 
+	
+	/** 
+	 * @return boolean
+	 */
 	@Override
 	public boolean IsEmpty() {
 		return count == 0;
 	}
 
+	
+	/** 
+	 * @return int
+	 */
 	@Override
 	public int Count() {
 		return count;

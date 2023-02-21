@@ -5,6 +5,10 @@
  * 19.02-2023
  * Clase StackArrayList: Crea listas estilo ArrayList
  */
+/**
+ * @author MAAG
+ *
+ */
 import java.util.ArrayList;
 
 public class StackArrayList<T> extends Stack<T>  {
@@ -15,26 +19,46 @@ public class StackArrayList<T> extends Stack<T>  {
 		miListaInterna = new ArrayList<T>(); 
 	}
 	
+	
+	/** 
+	 * @return int
+	 */
 	@Override
 	public int count() {
 		return miListaInterna.size();
 	}
 
+	
+	/** 
+	 * @return boolean
+	 */
 	@Override
 	public boolean isEmpty() {
 		return miListaInterna.isEmpty();
 	}
 
+	
+	/** 
+	 * @param value
+	 */
 	@Override
 	public void push(T value) {
 		miListaInterna.add(0, value);
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T pull() {
 		return miListaInterna.remove(0);
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T peek() {		
 		return miListaInterna.get(0);

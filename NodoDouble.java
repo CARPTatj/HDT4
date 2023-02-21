@@ -5,6 +5,10 @@
 * 19-02-2023
 * Clase NodoDouble: modela un Nodo para doubleList. 
 */
+/**
+ * @author MAAG
+ *
+ */
 public class NodoDouble<T>{
     private T value;
 	private NodoDouble<T> next;

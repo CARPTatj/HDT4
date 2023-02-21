@@ -5,6 +5,10 @@
  * 19.02-2023
  * Clase NodoSingle: modela un Nodo para singleList. 
  */
+/**
+ * @author MAAG
+ *
+ */
 public class NodoSingle<T>{
     private T value;
 	private NodoSingle<T> next;

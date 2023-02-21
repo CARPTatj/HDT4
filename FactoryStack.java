@@ -8,7 +8,13 @@
 public class FactoryStack<T>{
     private Stack<T> stack;
 
-    public Stack<T> getInstance(int tipo, int tipoS){
+    
+    /** 
+     * @param tipoS
+     * @param tipo
+     * @return Stack<T>
+     */
+    public Stack<T> getInstance(int tipoS, int tipo){
         switch(tipoS){
             case 1:
                 this.stack = new StackVector<T>(); 
@@ -17,12 +23,22 @@ public class FactoryStack<T>{
                 this.stack = new StackArrayList<T>(); 
                 break;
             case 3:
-                this.stack = new List<T>(tipoS); 
+                this.stack = new List<T>(tipo); 
                 break;
             default:
                 break;
         }
 
         return this.stack;
+    }
+
+    
+    /** 
+     * @param tipo2
+     * @param tipo
+     * @return Stack<Integer>
+     */
+    public Stack<Integer> getInstance(String tipo2, String tipo) {
+        return null;
     }
 }

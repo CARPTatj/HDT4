@@ -8,6 +8,12 @@
 public class FactoryList<T>{
     private Listas<T> lista;
     
+    
+    /** 
+     * @param tipo
+     * @param tipoS
+     * @return Listas<T>
+     */
     public Listas<T> getInstance(int tipo, int tipoS){
             switch(tipoS){
                 case 1:
@@ -23,6 +29,11 @@ public class FactoryList<T>{
             return this.lista;
         }
 
+    
+    /** 
+     * @param tipo
+     * @return Listas<T>
+     */
     public Listas<T> getInstance(int tipo) {
         return null;
     }

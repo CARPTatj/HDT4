@@ -11,25 +11,45 @@ abstract class Stack<T> implements IStack<T>{
     protected int count;
 
     
+	
+	/** 
+	 * @return int
+	 */
 	@Override
 	public int count() {
         return 0;
 	}
 
+	
+	/** 
+	 * @return boolean
+	 */
 	@Override
 	public boolean isEmpty() {
 		return false;
 	}
 
+	
+	/** 
+	 * @param value
+	 */
 	@Override
 	public void push(T value) {
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T pull() {
 		return null;
 	}
 
+	
+	/** 
+	 * @return T
+	 */
 	@Override
 	public T peek() {		
 		return null;
