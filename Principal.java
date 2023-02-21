@@ -53,7 +53,7 @@ public class Principal{
                     }
                     break;
                 case 2: 
-                    System.out.println("Resolusiones es tipo vetor");
+                    System.out.println("Resolusiones es tipo vector");
                     break;
                 case 3:
                     System.out.println("Resolusiones es tipo listas");

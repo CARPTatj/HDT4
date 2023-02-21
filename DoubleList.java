@@ -5,6 +5,10 @@
  * 19.02-2023
  * Clase DoubleList: hace una lista con espacios antes y despues del dato
  */
+/**
+ * @author MAAG
+ *
+ */
 public class DoubleList<T> extends Listas<T>{
     private NodoDouble<T> start;
 	private NodoDouble<T> end;

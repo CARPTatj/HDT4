@@ -4,6 +4,7 @@
  * Hoja de Trabajo 4
  * 19.02-2023
  * Clase Archivo: Sirve para abrir archivos
+ *  Archivos copiada de HDT2
  */
 import java.io.File;
 import java.io.FileNotFoundException;

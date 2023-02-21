@@ -5,6 +5,10 @@
  * 19.02-2023
  * Clase Interfaz: Crea diferentes metodos necesarios para las listas
  */
+/**
+ * @author MAAG
+ *
+ */
 public interface Ilista<T>{
     
     void InsertAtStart(T value);
